@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Админ-панель | Я буду кушац</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='index.html'">Главная</button>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome-block">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Администратор" class="main-illustration">
+      <h2>Панель администратора</h2>
+      <p class="desc">Управляйте всеми бронированиями и следите за качеством обслуживания гостей!</p>
+      <ul class="features-list">
+        <li><span class="feature-ico">🛡️</span> Контроль заявок</li>
+        <li><span class="feature-ico">📊</span> Аналитика посещений</li>
+        <li><span class="feature-ico">🤝</span> Связь с клиентами</li>
+      </ul>
+    </section>
+    <form id="adminLoginForm">
+      <label>Логин:<input type="text" name="login" required></label>
+      <label>Пароль:<input type="password" name="password" required></label>
+      <button type="submit">Войти</button>
+      <div id="adminLoginError" class="error"></div>
+    </form>
+    <section id="adminPanel" style="display:none;">
+      <h3>Все бронирования</h3>
+      <table id="adminBookingsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Пользователь</th>
+            <th>Дата</th>
+            <th>Время</th>
+            <th>Гости</th>
+            <th>Телефон</th>
+            <th>Статус</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Бронирования -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>© 2024 Я буду кушац</span>
+      <span class="footer-icons">🍽️ 🥗 🥂</span>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html> 

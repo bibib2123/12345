@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои бронирования | Я буду кушац</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='reserve.html'">Бронирование</button>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome-block">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="История" class="main-illustration">
+      <h2>Мои бронирования</h2>
+      <p class="desc">Следите за своими бронированиями и делитесь впечатлениями о посещении!</p>
+      <ul class="features-list">
+        <li><span class="feature-ico">📅</span> Вся история в одном месте</li>
+        <li><span class="feature-ico">⭐</span> Оставляйте отзывы после посещения</li>
+        <li><span class="feature-ico">💬</span> Получайте обратную связь</li>
+      </ul>
+    </section>
+    <div id="bookingsList">
+      <!-- Здесь будут отображаться бронирования -->
+    </div>
+    <div id="reviewSection" style="display:none;">
+      <h3>Оставить отзыв</h3>
+      <form id="reviewForm">
+        <textarea name="review" rows="4" required placeholder="Ваш отзыв..."></textarea>
+        <button type="submit">Отправить отзыв</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>© 2024 Я буду кушац</span>
+      <span class="footer-icons">🍽️ 🥗 🥂</span>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html> 

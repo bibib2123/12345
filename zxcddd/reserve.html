@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронирование | Я буду кушац</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='bookings.html'">Мои бронирования</button>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome-block">
+      <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Бронирование" class="main-illustration">
+      <h2>Бронирование столика</h2>
+      <p class="desc">Выберите дату, время и количество гостей — и ваш столик будет ждать вас!</p>
+      <ul class="features-list">
+        <li><span class="feature-ico">⏰</span> Быстрое подтверждение</li>
+        <li><span class="feature-ico">📞</span> Удобная связь с рестораном</li>
+        <li><span class="feature-ico">🥳</span> Гибкие условия для праздников</li>
+      </ul>
+    </section>
+    <form id="reserveForm">
+      <label>Дата:<input type="date" name="date" required></label>
+      <label>Время:<input type="time" name="time" required></label>
+      <label>Количество гостей:<input type="number" name="guests" min="1" max="10" required></label>
+      <label>Контактный телефон:<input type="text" name="phone" placeholder="+7(XXX)-XXX-XX-XX" required></label>
+      <button type="submit">Забронировать</button>
+      <div id="reserveError" class="error"></div>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>© 2024 Я буду кушац</span>
+      <span class="footer-icons">🍽️ 🥗 🥂</span>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html> 

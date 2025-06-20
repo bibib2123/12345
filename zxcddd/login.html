@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход | Я буду кушац</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='register.html'">Регистрация</button>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome-block">
+      <img src="https://cdn-icons-png.flaticon.com/512/3064/3064155.png" alt="Вход" class="main-illustration">
+      <h2>Вход</h2>
+      <p class="desc">Войдите в свой аккаунт, чтобы управлять бронированиями и оставлять отзывы!</p>
+      <ul class="features-list">
+        <li><span class="feature-ico">🗂️</span> Просмотр истории бронирований</li>
+        <li><span class="feature-ico">📝</span> Оставляйте отзывы</li>
+        <li><span class="feature-ico">🔔</span> Получайте напоминания</li>
+      </ul>
+    </section>
+    <form id="loginForm">
+      <label>Логин:<input type="text" name="login" required></label>
+      <label>Пароль:<input type="password" name="password" required></label>
+      <button type="submit">Войти</button>
+      <div id="loginError" class="error"></div>
+    </form>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>© 2024 Я буду кушац</span>
+      <span class="footer-icons">🍽️ 🥗 🥂</span>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html> 
